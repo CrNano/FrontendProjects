@@ -8,7 +8,7 @@ Este repositorio contiene proyectos de desarrollo frontend para practicar y mejo
 - **Descripción:** CV de una página creado con HTML semántico
 - **Tecnologías:** HTML, SEO Meta Tags, Open Graph
 - **Referencia:** [roadmap.sh - Single-Page CV Project](https://github.com/CrNano/FrontendProjects/blob/main/hola-mundo.html)
-- **Archivo:** `hola-mundo.html`
+- **Archivo:** `CV.html`
 
 ## Recursos de Aprendizaje
 
