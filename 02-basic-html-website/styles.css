@@ -1,101 +1,209 @@
-/* Estilos del Sitio Web Básico - Johan Navarro */
+/* 
+===========================================
+ESTILOS DEL SITIO WEB BÁSICO - JOHAN NAVARRO
+===========================================
 
-/* Reset básico - Elimina márgenes y padding por defecto del navegador */
+Este archivo CSS demuestra los conceptos fundamentales del diseño web moderno.
+Como estudiantes, aprenderán sobre reset CSS, tipografía, layout con Grid y Flexbox,
+y diseño responsive. Cada sección está comentada para facilitar el aprendizaje.
+
+CONCEPTOS CLAVE QUE APRENDERÁN:
+- Reset CSS y normalización
+- Tipografía y legibilidad
+- CSS Grid para layouts complejos
+- Flexbox para navegación
+- Media queries para responsive design
+- Formularios y estilos de interacción
+*/
+
+/* 
+===========================================
+RESET CSS - FUNDAMENTAL PARA DISEÑO CONSISTENTE
+===========================================
+
+¿Por qué necesitamos un reset CSS?
+Los navegadores tienen estilos por defecto diferentes. Un reset CSS elimina
+estas diferencias para que nuestro diseño se vea igual en todos los navegadores.
+
+IMPORTANTE: Siempre incluyan un reset al inicio de sus proyectos CSS.
+*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    margin: 0; /* Elimina márgenes por defecto de todos los elementos */
+    padding: 0; /* Elimina padding por defecto de todos los elementos */
+    box-sizing: border-box; /* CRÍTICO: Incluye padding y border en el ancho total */
 }
 
-/* Estilos del cuerpo del documento */
+/* 
+===========================================
+ESTILOS BASE DEL DOCUMENTO
+===========================================
+
+Estos estilos se aplican a todo el sitio. Es la base sobre la cual construimos
+el resto del diseño. Noten cómo elegimos una fuente legible y colores apropiados.
+*/
 body {
-    font-family: Arial, sans-serif; /* Fuente principal del sitio */
-    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
-    color: #333; /* Color de texto principal */
-    background-color: #f8f9fa; /* Color de fondo gris claro */
+    font-family: Arial, sans-serif; /* Fuente sans-serif para mejor legibilidad en pantallas */
+    line-height: 1.6; /* Espaciado entre líneas: 1.6 es el estándar para legibilidad óptima */
+    color: #333; /* Color de texto: #333 es un gris oscuro, más suave que el negro puro */
+    background-color: #f8f9fa; /* Fondo gris muy claro para contraste sutil */
 }
 
-/* Estilos del header - Encabezado del sitio */
+/* 
+===========================================
+HEADER Y NAVEGACIÓN - FLEXBOX EN ACCIÓN
+===========================================
+
+Esta sección demuestra el uso de Flexbox para crear una navegación moderna.
+Flexbox es perfecto para layouts unidimensionales (una fila o una columna).
+
+CONCEPTOS QUE APRENDERÁN:
+- Flexbox para navegación horizontal
+- justify-content para distribución de espacio
+- align-items para alineación vertical
+- Transiciones CSS para efectos suaves
+*/
+
+/* Header principal del sitio */
 header {
-    background: #343a40; /* Color de fondo gris oscuro */
-    color: white; /* Texto en blanco */
-    padding: 1rem 0; /* Espaciado vertical */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil */
+    background: #343a40; /* Color de fondo: gris oscuro profesional */
+    color: white; /* Texto blanco para contraste */
+    padding: 1rem 0; /* Espaciado vertical: 1rem = 16px por defecto */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil para profundidad visual */
 }
 
-/* Navegación principal */
+/* 
+NAVEGACIÓN CON FLEXBOX
+Flexbox es ideal para navegación porque permite distribuir elementos
+horizontalmente con control total sobre el espaciado y alineación.
+*/
 nav {
-    max-width: 1200px; /* Ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor */
-    display: flex; /* Usa flexbox para el layout */
-    justify-content: space-between; /* Espacio entre logo y menú */
-    align-items: center; /* Centra verticalmente */
-    padding: 0 20px; /* Espaciado horizontal */
+    max-width: 1200px; /* Ancho máximo: evita que el contenido se extienda demasiado */
+    margin: 0 auto; /* Centrado horizontal: técnica clásica para centrar contenedores */
+    display: flex; /* ACTIVA FLEXBOX: convierte el nav en un contenedor flex */
+    justify-content: space-between; /* Distribuye espacio: logo a la izquierda, menú a la derecha */
+    align-items: center; /* Alineación vertical: centra todos los elementos verticalmente */
+    padding: 0 20px; /* Espaciado horizontal interno */
 }
 
-/* Logo o nombre del sitio */
+/* Estilos del logo/nombre del sitio */
 nav span {
-    font-size: 1.5rem; /* Tamaño de fuente grande */
-    font-weight: bold; /* Texto en negrita */
+    font-size: 1.5rem; /* Tamaño de fuente: 1.5rem = 24px (1.5 veces el tamaño base) */
+    font-weight: bold; /* Peso de fuente: negrita para destacar el nombre */
 }
 
 /* Enlaces de navegación */
 nav a {
-    color: white; /* Color blanco para enlaces */
-    text-decoration: none; /* Sin subrayado */
-    margin: 0 10px; /* Espacio entre enlaces */
-    transition: color 0.3s; /* Transición suave al cambiar color */
+    color: white; /* Color blanco para contraste con fondo oscuro */
+    text-decoration: none; /* Sin subrayado: enlaces más limpios */
+    margin: 0 10px; /* Espaciado horizontal entre enlaces */
+    transition: color 0.3s; /* Transición suave: animación de 0.3 segundos al cambiar color */
 }
 
-/* Efecto hover en enlaces de navegación */
+/* 
+EFECTO HOVER - INTERACTIVIDAD DEL USUARIO
+El hover es fundamental en UX. Proporciona feedback visual inmediato
+cuando el usuario interactúa con elementos clickeables.
+*/
 nav a:hover {
-    color: #007bff; /* Color azul al pasar el mouse */
+    color: #007bff; /* Color azul al pasar el mouse: feedback visual claro */
 }
 
-/* Contenido principal del sitio */
+/* 
+===========================================
+CONTENIDO PRINCIPAL Y ESTRUCTURA
+===========================================
+
+El contenido principal debe estar bien estructurado y centrado.
+Esto mejora la legibilidad y la experiencia del usuario.
+*/
+
+/* Contenedor principal del contenido */
 main {
-    max-width: 1200px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centra el contenido */
-    padding: 20px; /* Espaciado interno */
+    max-width: 1200px; /* Ancho máximo: evita líneas de texto demasiado largas */
+    margin: 0 auto; /* Centrado: distribuye el espacio automáticamente a los lados */
+    padding: 20px; /* Espaciado interno: respiración visual alrededor del contenido */
 }
 
-/* Sección hero - Título principal */
+/* 
+===========================================
+SECCIÓN HERO - PRIMERA IMPRESIÓN
+===========================================
+
+La sección hero es lo primero que ve el usuario. Debe ser impactante
+y comunicar claramente el propósito del sitio.
+
+CONCEPTOS QUE APRENDERÁN:
+- Jerarquía visual con tamaños de fuente
+- Centrado de contenido
+- Sombras para profundidad
+- Espaciado para respiración visual
+*/
+
+/* Sección hero - La primera impresión del usuario */
 section:first-of-type {
-    text-align: center; /* Centra el texto */
-    padding: 40px 0; /* Espaciado vertical */
-    background: white; /* Fondo blanco */
-    margin: 20px 0; /* Espacio vertical */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra sutil */
+    text-align: center; /* Centrado: crea impacto visual inmediato */
+    padding: 40px 0; /* Espaciado vertical generoso: da importancia a la sección */
+    background: white; /* Fondo blanco: contraste con el fondo gris del body */
+    margin: 20px 0; /* Espacio vertical: separa de otros elementos */
+    border-radius: 8px; /* Bordes redondeados: diseño moderno y suave */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra sutil: crea profundidad y eleva el contenido */
 }
 
-/* Título principal de la sección hero */
+/* Título principal - La jerarquía visual más importante */
 section:first-of-type h1 {
-    font-size: 3rem; /* Tamaño de fuente muy grande */
-    color: #2c3e50; /* Color azul oscuro */
-    margin-bottom: 10px; /* Espacio inferior */
+    font-size: 3rem; /* Tamaño grande: 3rem = 48px, domina visualmente la página */
+    color: #2c3e50; /* Color azul oscuro: profesional y legible */
+    margin-bottom: 10px; /* Espacio inferior: separa del párrafo siguiente */
 }
 
-/* Párrafo de la sección hero */
+/* Párrafo descriptivo de la sección hero */
 section:first-of-type p {
-    font-size: 1.2rem; /* Tamaño de fuente grande */
-    color: #6c757d; /* Color gris */
+    font-size: 1.2rem; /* Tamaño mediano: 1.2rem = 19.2px, complementa el título */
+    color: #6c757d; /* Color gris: menos prominente que el título pero legible */
 }
 
-/* Layout de tres columnas - Contenido principal */
+/* 
+===========================================
+CSS GRID - LAYOUT DE TRES COLUMNAS
+===========================================
+
+CSS Grid es la herramienta más poderosa para layouts bidimensionales.
+Permite crear layouts complejos con control total sobre filas y columnas.
+
+CONCEPTOS QUE APRENDERÁN:
+- CSS Grid vs Flexbox (cuándo usar cada uno)
+- grid-template-columns para definir columnas
+- fr (fractional units) para distribución proporcional
+- gap para espaciado entre elementos
+- Responsive design con Grid
+
+¿CUÁNDO USAR GRID VS FLEXBOX?
+- Grid: Layouts bidimensionales (filas Y columnas)
+- Flexbox: Layouts unidimensionales (fila O columna)
+*/
+
+/* Layout principal de tres columnas */
 section:nth-of-type(2) {
-    display: grid; /* Usa CSS Grid para el layout */
-    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual tamaño */
-    gap: 20px; /* Espacio entre columnas */
-    margin: 20px 0; /* Espacio vertical */
+    display: grid; /* ACTIVA CSS GRID: convierte la sección en un contenedor grid */
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales: 1fr = 1 fracción del espacio disponible */
+    gap: 20px; /* Espacio entre elementos: más elegante que margin en Grid */
+    margin: 20px 0; /* Espacio vertical: separa de otras secciones */
 }
 
-/* Contenedores de cada columna */
+/* 
+EXPLICACIÓN DE grid-template-columns: 1fr 1fr 1fr
+- 1fr = 1 fracción del espacio disponible
+- Tres columnas de igual tamaño
+- Se adaptan automáticamente al ancho del contenedor
+- Alternativas: 300px 300px 300px (fijo) o repeat(3, 1fr) (más conciso)
+*/
+
+/* Contenedores individuales de cada columna */
 section:nth-of-type(2) > div {
-    background: white; /* Fondo blanco */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra sutil */
+    background: white; /* Fondo blanco: contraste con el fondo gris */
+    padding: 20px; /* Espaciado interno: respiración visual dentro de cada columna */
+    border-radius: 8px; /* Bordes redondeados: diseño moderno y suave */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra sutil: eleva cada columna visualmente */
 }
 
 /* Títulos de sección en las columnas */
@@ -255,34 +363,65 @@ button:hover {
     background: #0056b3; /* Fondo azul más oscuro al pasar el mouse */
 }
 
-/* Media query para tablets - 2 columnas */
+/* 
+===========================================
+RESPONSIVE DESIGN - MEDIA QUERIES
+===========================================
+
+El diseño responsive es FUNDAMENTAL en desarrollo web moderno.
+Los sitios deben verse bien en todos los dispositivos.
+
+CONCEPTOS QUE APRENDERÁN:
+- Media queries para diferentes tamaños de pantalla
+- Mobile-first vs Desktop-first
+- Breakpoints comunes (768px, 1024px)
+- Adaptación de layouts para diferentes dispositivos
+
+BREAKPOINTS COMUNES:
+- Móviles: hasta 768px
+- Tablets: 769px - 1024px  
+- Desktop: 1025px en adelante
+*/
+
+/* 
+MEDIA QUERY PARA TABLETS
+En tablets, 3 columnas pueden ser muy estrechas.
+2 columnas proporcionan mejor legibilidad.
+*/
 @media (max-width: 1024px) and (min-width: 769px) {
-    /* Layout de dos columnas en tablets */
+    /* Layout adaptado para tablets */
     section:nth-of-type(2) {
-        grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+        grid-template-columns: 1fr 1fr; /* Dos columnas: mejor uso del espacio en tablets */
     }
 }
 
-/* Media queries para diseño responsive */
+/* 
+MEDIA QUERY PARA MÓVILES
+En móviles, el espacio es limitado. Necesitamos:
+- Navegación vertical
+- Una sola columna
+- Tamaños de fuente más pequeños
+- Menos padding para aprovechar el espacio
+*/
 @media (max-width: 768px) {
-    /* Navegación en móviles */
+    /* Navegación adaptada para móviles */
     nav {
-        flex-direction: column; /* Apila elementos verticalmente */
-        gap: 10px; /* Espacio entre elementos */
+        flex-direction: column; /* Cambia de horizontal a vertical */
+        gap: 10px; /* Espacio entre elementos del menú */
     }
     
     /* Título principal más pequeño en móviles */
     section:first-of-type h1 {
-        font-size: 2rem; /* Tamaño de fuente reducido */
+        font-size: 2rem; /* Reduce de 3rem a 2rem: mejor para pantallas pequeñas */
     }
     
-    /* Layout de columnas en una sola columna en móviles */
+    /* Layout de una sola columna en móviles */
     section:nth-of-type(2) {
-        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-columns: 1fr; /* Una sola columna: mejor legibilidad en móviles */
     }
     
-    /* Contenido principal con menos padding en móviles */
+    /* Menos padding en móviles para aprovechar el espacio */
     main {
-        padding: 10px; /* Menos espaciado interno */
+        padding: 10px; /* Reduce el padding: más espacio para el contenido */
     }
 }

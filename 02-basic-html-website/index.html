@@ -1,37 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Configuración básica del documento -->
+    <!-- 
+    ===========================================
+    CONFIGURACIÓN BÁSICA DEL DOCUMENTO HTML
+    ===========================================
+    
+    Como estudiantes, deben entender que el <head> contiene información
+    que NO es visible en la página, pero es CRÍTICA para:
+    - SEO (Search Engine Optimization)
+    - Accesibilidad
+    - Rendimiento
+    - Experiencia del usuario
+    
+    CONCEPTOS CLAVE:
+    - DOCTYPE: Define la versión de HTML
+    - lang: Especifica el idioma para accesibilidad
+    - charset: Codificación de caracteres
+    - viewport: Responsive design
+    - meta tags: Información para motores de búsqueda
+    -->
+    
+    <!-- Codificación de caracteres - CRÍTICO para caracteres especiales -->
     <meta charset="UTF-8">
+    
+    <!-- 
+    VIEWPORT - FUNDAMENTAL PARA RESPONSIVE DESIGN
+    width=device-width: El ancho de la página = ancho del dispositivo
+    initial-scale=1.0: Zoom inicial al 100%
+    Sin esto, los sitios no se ven bien en móviles
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página - Aparece en la pestaña del navegador -->
     <title>Johan Navarro - Desarrollador Frontend</title>
     
-    <!-- Meta tags para SEO - Optimización para motores de búsqueda -->
+    <!-- 
+    ===========================================
+    SEO - OPTIMIZACIÓN PARA MOTORES DE BÚSQUEDA
+    ===========================================
+    
+    Los meta tags ayudan a Google y otros motores de búsqueda
+    a entender el contenido de la página.
+    
+    IMPORTANTE: Un buen SEO puede aumentar significativamente
+    el tráfico orgánico a su sitio web.
+    -->
+    
+    <!-- Descripción que aparece en los resultados de Google -->
     <meta name="description" content="Portfolio de Johan Navarro - Desarrollador Frontend con experiencia en HTML, CSS, JavaScript y sistemas judiciales">
+    
+    <!-- Palabras clave relevantes (menos importante que antes, pero útil) -->
     <meta name="keywords" content="desarrollador, frontend, programador, Costa Rica, HTML, CSS, JavaScript, portfolio">
+    
+    <!-- Autor del sitio -->
     <meta name="author" content="Johan Navarro Sáenz">
     
-    <!-- Open Graph Tags - Mejoran la apariencia al compartir en redes sociales -->
+    <!-- 
+    ===========================================
+    OPEN GRAPH - COMPARTIR EN REDES SOCIALES
+    ===========================================
+    
+    Cuando alguien comparte su sitio en Facebook, Twitter, LinkedIn, etc.,
+    estas etiquetas determinan cómo se ve el enlace.
+    
+    SIN Open Graph: Enlace simple con texto
+    CON Open Graph: Imagen, título, descripción atractiva
+    -->
+    
+    <!-- Título que aparece al compartir en redes sociales -->
     <meta property="og:title" content="Johan Navarro - Desarrollador Frontend">
+    
+    <!-- Descripción que aparece al compartir -->
     <meta property="og:description" content="Portfolio de Johan Navarro - Desarrollador Frontend">
+    
+    <!-- Tipo de contenido -->
     <meta property="og:type" content="website">
+    
+    <!-- Idioma y región -->
     <meta property="og:locale" content="es_CR">
     
-    <!-- Favicon - Icono que aparece en la pestaña del navegador -->
+    <!-- 
+    FAVICON - ICONO DE LA PESTAÑA
+    El favicon es el pequeño icono que aparece en la pestaña del navegador.
+    Mejora la identidad visual y profesionalismo del sitio.
+    -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
     
-    <!-- Enlace al archivo CSS externo -->
+    <!-- 
+    ENLACE AL ARCHIVO CSS
+    Siempre enlacen sus archivos CSS en el <head> para que
+    los estilos se carguen antes del contenido.
+    -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header con navegación principal -->
+    <!-- 
+    ===========================================
+    ESTRUCTURA SEMÁNTICA DEL CUERPO
+    ===========================================
+    
+    El <body> contiene todo el contenido visible de la página.
+    Usamos etiquetas semánticas para dar significado a cada sección.
+    
+    ETIQUETAS SEMÁNTICAS IMPORTANTES:
+    - <header>: Encabezado de la página
+    - <nav>: Navegación principal
+    - <main>: Contenido principal (único por página)
+    - <section>: Secciones temáticas
+    - <footer>: Pie de página
+    
+    BENEFICIOS DE HTML SEMÁNTICO:
+    - Mejor SEO
+    - Mejor accesibilidad
+    - Código más mantenible
+    - Mejor comprensión del contenido
+    -->
+    
+    <!-- 
+    HEADER - ENCABEZADO DE LA PÁGINA
+    Contiene información de identidad y navegación principal.
+    Aparece en todas las páginas del sitio.
+    -->
     <header>
+        <!-- 
+        NAVEGACIÓN PRINCIPAL
+        La navegación debe ser consistente en todas las páginas.
+        Usa enlaces relativos para páginas del mismo sitio.
+        -->
         <nav>
-            <!-- Logo o nombre del sitio -->
+            <!-- Logo o nombre del sitio - Identidad visual -->
             <div>
                 <span>Johan Navarro</span>
             </div>
-            <!-- Menú de navegación -->
+            
+            <!-- 
+            MENÚ DE NAVEGACIÓN
+            Enlaces a las diferentes secciones del sitio.
+            Noten el uso de enlaces relativos (sin http://)
+            -->
             <div>
                 <a href="index.html">Home</a> / 
                 <a href="projects.html">Projects</a> / 
@@ -41,19 +148,57 @@
         </nav>
     </header>
 
-    <!-- Contenido principal del sitio -->
+    <!-- 
+    MAIN - CONTENIDO PRINCIPAL
+    Solo debe haber UN elemento <main> por página.
+    Contiene el contenido único de esta página específica.
+    -->
     <main>
-        <!-- Sección hero - Título principal -->
+        <!-- 
+        SECCIÓN HERO - PRIMERA IMPRESIÓN
+        La sección hero es lo primero que ve el usuario.
+        Debe comunicar claramente el propósito del sitio.
+        -->
         <section>
+            <!-- Título principal - La jerarquía más importante -->
             <h1>Desarrollador Frontend</h1>
+            
+            <!-- Descripción breve del sitio -->
             <p>HTML solamente con layout apropiado, sin estilos</p>
         </section>
 
-        <!-- Layout de tres columnas - Contenido principal -->
+        <!-- 
+        ===========================================
+        LAYOUT DE TRES COLUMNAS - CSS GRID EN ACCIÓN
+        ===========================================
+        
+        Esta sección demuestra el uso de CSS Grid para crear un layout
+        de tres columnas que se adapta a diferentes tamaños de pantalla.
+        
+        ESTRUCTURA:
+        - Cada <div> representa una columna
+        - CSS Grid distribuye el espacio automáticamente
+        - Responsive: 3 columnas en desktop, 2 en tablet, 1 en móvil
+        
+        CONCEPTOS QUE APRENDERÁN:
+        - CSS Grid para layouts complejos
+        - Responsive design
+        - Organización de contenido
+        - Enlaces internos y externos
+        -->
         <section>
-            <!-- Columna izquierda - Proyectos -->
+            <!-- 
+            COLUMNA IZQUIERDA - PROYECTOS
+            Muestra una lista de proyectos con enlaces.
+            Usa enlaces internos (#) para navegación dentro de la página.
+            -->
             <div>
                 <h2>Proyectos</h2>
+                <!-- 
+                LISTA NO ORDENADA
+                <ul> para listas donde el orden no importa.
+                Cada <li> contiene un enlace a un proyecto específico.
+                -->
                 <ul>
                     <li><a href="projects.html#portfolio">Portfolio HTML</a></li>
                     <li><a href="projects.html#calculator">Calculadora</a></li>
@@ -63,26 +208,46 @@
                 </ul>
             </div>
 
-            <!-- Columna central - Experiencia laboral -->
+            <!-- 
+            COLUMNA CENTRAL - EXPERIENCIA LABORAL
+            Muestra experiencia profesional con enlaces externos.
+            Usa enlaces absolutos (https://) para sitios externos.
+            -->
             <div>
                 <h2>Experiencia Laboral</h2>
+                
+                <!-- Experiencia 1 -->
                 <div>
                     <h3>roadmap.sh</h3>
                     <p>Completé todos los proyectos frontend</p>
+                    <!-- Enlace externo - se abre en la misma pestaña -->
                     <a href="https://roadmap.sh/projects">Visita mi Perfil</a>
                 </div>
+                
+                <!-- Experiencia 2 -->
                 <div>
                     <h3>Trabajo Open Source</h3>
                     <p>Contribuí a 50 proyectos open source. Creé mis propios proyectos con 200 GitHub Stars.</p>
+                    <!-- Enlace externo a GitHub -->
                     <a href="https://github.com/CrNano">Visita mi GitHub</a>
                 </div>
             </div>
 
-            <!-- Columna derecha - Educación -->
+            <!-- 
+            COLUMNA DERECHA - EDUCACIÓN
+            Muestra información académica y cursos.
+            Combina párrafos y listas para organizar la información.
+            -->
             <div>
                 <h2>Educación</h2>
+                
+                <!-- Información general de educación -->
                 <p>Graduado con 3.76 de 4 CGPA. Gané el Hackathon Acme. Organicé 30 sesiones.</p>
+                
+                <!-- Subtítulo para la lista de cursos -->
                 <h3>Cursos que tomé:</h3>
+                
+                <!-- Lista de cursos específicos -->
                 <ul>
                     <li>Programación Orientada a Objetos</li>
                     <li>Estructuras de Datos y Algoritmos</li>
@@ -97,20 +262,53 @@
             </div>
         </section>
 
-        <!-- Sección de reseñas - Testimonios -->
+        <!-- 
+        ===========================================
+        SECCIÓN DE TESTIMONIOS - CREDIBILIDAD SOCIAL
+        ===========================================
+        
+        Los testimonios son fundamentales para construir confianza.
+        Demuestran que otros han tenido experiencias positivas.
+        
+        ELEMENTOS SEMÁNTICOS IMPORTANTES:
+        - <blockquote>: Para citas textuales
+        - <cite>: Para atribuir la cita a su autor
+        - <strong>: Para nombres importantes
+        - <small>: Para información secundaria
+        
+        CONCEPTOS QUE APRENDERÁN:
+        - Elementos semánticos para citas
+        - Estructura de testimonios
+        - Jerarquía de información
+        - CSS Grid para layout de testimonios
+        -->
         <section>
             <h2>Reseñas de mis Profesores</h2>
+            
+            <!-- Contenedor de testimonios -->
             <div>
                 <!-- Testimonio 1 -->
                 <div>
+                    <!-- 
+                    BLOCKQUOTE - CITA TEXTUAL
+                    <blockquote> es semánticamente correcto para citas.
+                    Los navegadores y lectores de pantalla lo reconocen.
+                    -->
                     <blockquote>
                         "Johan Navarro fue un estudiante brillante; siempre se destacó con sus tareas."
                     </blockquote>
+                    
+                    <!-- 
+                    CITE - ATRIBUCIÓN DE LA CITA
+                    <cite> indica quién dijo la cita.
+                    Es importante para accesibilidad y SEO.
+                    -->
                     <cite>
                         <strong>Jane Doe</strong><br>
                         <small>Profesora Asistente</small>
                     </cite>
                 </div>
+                
                 <!-- Testimonio 2 -->
                 <div>
                     <blockquote>
@@ -121,6 +319,7 @@
                         <small>Profesora Asistente</small>
                     </cite>
                 </div>
+                
                 <!-- Testimonio 3 -->
                 <div>
                     <blockquote>
@@ -135,8 +334,21 @@
         </section>
     </main>
 
-    <!-- Footer - Pie de página -->
+    <!-- 
+    ===========================================
+    FOOTER - PIE DE PÁGINA
+    ===========================================
+    
+    El footer contiene información secundaria como:
+    - Copyright
+    - Enlaces legales
+    - Información de contacto adicional
+    - Enlaces a redes sociales
+    
+    IMPORTANTE: El footer aparece en todas las páginas del sitio.
+    -->
     <footer>
+        <!-- Información de copyright -->
         <p>© todos los derechos reservados 2025</p>
     </footer>
 </body>
