@@ -85,7 +85,7 @@ section:first-of-type p {
 /* Layout de tres columnas - Contenido principal */
 section:nth-of-type(2) {
     display: grid; /* Usa CSS Grid para el layout */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas que se adaptan automáticamente */
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual tamaño */
     gap: 20px; /* Espacio entre columnas */
     margin: 20px 0; /* Espacio vertical */
 }
@@ -253,6 +253,14 @@ button {
 /* Efecto hover en botones */
 button:hover {
     background: #0056b3; /* Fondo azul más oscuro al pasar el mouse */
+}
+
+/* Media query para tablets - 2 columnas */
+@media (max-width: 1024px) and (min-width: 769px) {
+    /* Layout de dos columnas en tablets */
+    section:nth-of-type(2) {
+        grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    }
 }
 
 /* Media queries para diseño responsive */
