@@ -1,48 +1,72 @@
 # Single-Page CV
 
-Un CV de una página creado únicamente con HTML semántico, siguiendo las mejores prácticas de estructura y SEO.
+CV profesional implementado con HTML semántico y CSS moderno.
 
-## 📋 Descripción
+## Implementación
 
-Este proyecto implementa un Curriculum Vitae completo usando solo HTML, sin estilos CSS. El objetivo es aprender a estructurar contenido de manera semántica y preparar la base para futuros estilos.
+Este proyecto demuestra la implementación de:
+- Estructura HTML semántica correcta
+- Estilos CSS profesionales y responsive
+- Optimización SEO con meta tags
+- Diseño adaptable a diferentes dispositivos
+- Organización de código siguiendo mejores prácticas
 
-## 🛠️ Tecnologías
+## Tecnologías Utilizadas
 
-- **HTML5** - Estructura semántica
-- **SEO Meta Tags** - Optimización para motores de búsqueda
-- **Open Graph Tags** - Compartir en redes sociales
-- **Favicon** - Icono personalizado
+### HTML Semántico
+```html
+<!-- Estructura semántica correcta -->
+<header>
+<main>
+<section>
+<footer>
+```
 
-## 📁 Archivos
+### CSS Moderno
+```css
+/* Selectores y propiedades */
+header { background: #2c3e50; }
+section { margin: 20px 0; }
 
-- `CV.html` - Archivo principal del CV
+/* Responsive design */
+@media (max-width: 600px) {
+    body { padding: 10px; }
+}
+```
 
-## 🎯 Características
+### SEO
+```html
+<!-- Meta tags para motores de búsqueda -->
+<meta name="description" content="CV de Johan Navarro - Desarrollador Frontend">
+<meta name="keywords" content="desarrollador, frontend, programador">
 
-- ✅ Estructura HTML semántica
-- ✅ Meta tags SEO completos
-- ✅ Open Graph tags para redes sociales
-- ✅ Favicon integrado
-- ✅ Información personal completa
-- ✅ Secciones organizadas: Educación, Experiencia, Habilidades, Referencias
+<!-- Open Graph para redes sociales -->
+<meta property="og:title" content="CV - Johan Navarro">
+<meta property="og:description" content="Desarrollador Frontend">
+```
 
-## 📚 Referencia
+## Estructura del Proyecto
 
-- **Proyecto Original:** [roadmap.sh - Single-Page CV Project](https://roadmap.sh/projects/single-page-cv)
-- **Mi Implementación:** [GitHub - CV.html](https://github.com/CrNano/FrontendProjects/blob/main/01-single-page-cv/CV.html)
+```
+01-single-page-cv/
+├── CV.html          # Página principal del CV
+├── styles.css       # Estilos CSS
+└── README.md        # Documentación
+```
 
-## 🚀 Cómo usar
+### Archivos
 
-1. Abre `CV.html` en cualquier navegador web
-2. El CV se mostrará con el estilo por defecto del navegador
-3. Listo para ser estilizado con CSS en futuros proyectos
+- **`CV.html`** - Contiene la estructura HTML completa con meta tags SEO
+- **`styles.css`** - Estilos CSS con diseño responsive y colores profesionales
 
-## 📝 Contenido
+## Uso
 
-El CV incluye información completa de Johan Navarro Sáenz:
-- Datos de contacto
-- Educación (Bachillerato en Ingeniería de Sistemas, Técnico en Desarrollo de Software)
-- Experiencia profesional (Poder Judicial, KO Soportech, Region Gamer)
-- Idiomas (Español nativo, Inglés intermedio-avanzado)
-- Habilidades técnicas (HTML, CSS, JavaScript, Python, SQL, etc.)
-- Referencias profesionales
+1. Abrir `CV.html` en cualquier navegador
+2. El CV se muestra con estilos profesionales
+3. Se adapta automáticamente a diferentes tamaños de pantalla
+
+## Referencias
+
+- [roadmap.sh - Single-Page CV Project](https://roadmap.sh/projects/single-page-cv)
+- [MDN HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+- [MDN CSS Properties](https://developer.mozilla.org/en-US/docs/Web/CSS)

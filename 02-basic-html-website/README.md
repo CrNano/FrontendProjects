@@ -1,87 +1,94 @@
 # Basic HTML Website
 
-Un sitio web multi-página creado únicamente con HTML semántico, incluyendo navegación, formularios y estructura completa.
+Sitio web multi-página implementado con HTML semántico, CSS moderno y navegación completa.
 
-## 📋 Descripción
+## Implementación
 
-Este proyecto implementa un sitio web completo con múltiples páginas usando solo HTML, sin estilos CSS. El objetivo es aprender a estructurar sitios web de manera semántica y preparar la base para futuros estilos.
+Este proyecto demuestra la implementación de:
+- Sitios web multi-página con navegación
+- Formularios HTML5 con validación
+- CSS Grid y Flexbox para layouts
+- Diseño responsive complejo
+- Organización de proyectos profesionales
 
-## 🛠️ Tecnologías
+## Tecnologías Utilizadas
 
-- **HTML5** - Estructura semántica
-- **SEO Meta Tags** - Optimización para motores de búsqueda
-- **Open Graph Tags** - Compartir en redes sociales
-- **Formularios HTML** - Formulario de contacto completo
-- **Favicon** - Icono personalizado
+### Navegación Multi-página
+```html
+<!-- Navegación consistente en todas las páginas -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="articles.html">Articles</a>
+    <a href="contact.html">Contact</a>
+</nav>
+```
 
-## 📁 Archivos
+### Formularios HTML5
+```html
+<!-- Formulario de contacto con validación -->
+<form action="#" method="post">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" required></textarea>
+    
+    <button type="submit">Enviar</button>
+</form>
+```
 
-- `index.html` - Página principal (Homepage)
-- `projects.html` - Página de proyectos
-- `articles.html` - Página de artículos/blog
-- `contact.html` - Página de contacto con formulario
-- `BasicHTMLWebsite.html` - Archivo original (backup)
+### CSS Grid y Flexbox
+```css
+/* CSS Grid para layout de 3 columnas */
+section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
 
-## 🎯 Características
+/* Flexbox para navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+```
 
-- ✅ Estructura HTML semántica
-- ✅ Navegación multi-página
-- ✅ Meta tags SEO en todas las páginas
-- ✅ Open Graph tags para redes sociales
-- ✅ Formulario de contacto completo
-- ✅ Layout de 3 columnas en homepage
-- ✅ Favicon integrado
+## Estructura del Proyecto
 
-## 📚 Referencia
+```
+02-basic-html-website/
+├── index.html              # Página de inicio
+├── projects.html           # Página de proyectos
+├── articles.html           # Página de artículos
+├── contact.html            # Página de contacto
+├── styles.css              # Estilos CSS del sitio
+├── BasicHTMLWebsite.html   # Archivo original (backup)
+└── README.md               # Documentación
+```
 
-- **Proyecto Original:** [roadmap.sh - Basic HTML Website Project](https://roadmap.sh/projects/basic-html-website)
-- **Mi Implementación:** [GitHub - Basic HTML Website](https://github.com/CrNano/FrontendProjects/tree/main/02-basic-html-website)
+### Archivos
 
-## 🚀 Cómo usar
+- **`index.html`** - Página de inicio con hero section y layout de 3 columnas
+- **`projects.html`** - Lista de proyectos con enlaces
+- **`articles.html`** - Página de artículos del blog
+- **`contact.html`** - Formulario de contacto con validación HTML5
+- **`styles.css`** - Estilos CSS con Grid, Flexbox y responsive design
 
-1. Abre `index.html` en cualquier navegador web
-2. Navega entre las diferentes páginas usando el menú
-3. El sitio se mostrará con el estilo por defecto del navegador
-4. Listo para ser estilizado con CSS en futuros proyectos
+## Uso
 
-## 📄 Páginas del Sitio
+1. Abrir `index.html` en cualquier navegador
+2. Navegar entre las diferentes páginas usando el menú
+3. Probar el formulario de contacto
+4. Verificar el diseño responsive redimensionando la ventana
 
-### 🏠 Homepage (`index.html`)
-- Hero section con título principal
-- Layout de 3 columnas:
-  - **Proyectos:** Lista de proyectos con enlaces
-  - **Experiencia Laboral:** Información profesional
-  - **Educación:** Cursos y estudios
-- Sección de reseñas de profesores
+## Referencias
 
-### 📁 Projects (`projects.html`)
-- Lista detallada de proyectos
-- Información técnica de cada proyecto
-- Sección de habilidades técnicas
-- Enlaces a proyectos externos
-
-### 📝 Articles (`articles.html`)
-- Artículo destacado
-- Lista de todos los artículos
-- Categorías de contenido
-- Formulario de suscripción al newsletter
-
-### 📞 Contact (`contact.html`)
-- Información de contacto personal
-- Formulario completo con campos:
-  - Nombre, email, teléfono
-  - Asunto, mensaje
-  - Presupuesto, timeline
-  - Newsletter, privacidad
-- Sección de preguntas frecuentes
-
-## 🎨 Estructura Semántica
-
-El sitio utiliza elementos HTML semánticos:
-- `<header>` - Encabezado con navegación
-- `<nav>` - Navegación principal
-- `<main>` - Contenido principal
-- `<section>` - Secciones de contenido
-- `<article>` - Artículos individuales
-- `<footer>` - Pie de página
-- `<form>` - Formularios interactivos
+- [roadmap.sh - Basic HTML Website Project](https://roadmap.sh/projects/basic-html-website)
+- [MDN CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+- [MDN Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+- [MDN Forms](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)

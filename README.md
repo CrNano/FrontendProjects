@@ -1,53 +1,117 @@
 # Frontend Projects
 
-Este repositorio contiene proyectos de desarrollo frontend para practicar y mejorar habilidades, organizados por carpetas individuales.
+Este repositorio contiene proyectos de desarrollo frontend implementados siguiendo las mejores prácticas de la industria.
 
-## 📁 Estructura del Proyecto
+## Proyectos Implementados
+
+Los proyectos cubren los fundamentos del desarrollo web moderno:
+- **HTML semántico** - Estructura correcta de páginas web
+- **CSS moderno** - Estilos profesionales y responsive
+- **SEO** - Optimización para motores de búsqueda
+- **Responsive Design** - Adaptación a diferentes dispositivos
+- **Formularios** - Captura y validación de datos
+- **Navegación multi-página** - Estructura de sitios web completos
+
+## Estructura del Proyecto
 
 ```
 FrontendProjects/
-├── 01-single-page-cv/          # Proyecto CV de una página
-│   ├── CV.html
-│   └── README.md
+├── 01-single-page-cv/          # CV profesional con HTML y CSS
+│   ├── CV.html                 # Página principal del CV
+│   ├── styles.css              # Estilos CSS del CV
+│   └── README.md               # Documentación del proyecto
 ├── 02-basic-html-website/      # Sitio web multi-página
-│   ├── index.html
-│   ├── projects.html
-│   ├── articles.html
-│   ├── contact.html
-│   ├── BasicHTMLWebsite.html
-│   └── README.md
+│   ├── index.html              # Página de inicio
+│   ├── projects.html           # Página de proyectos
+│   ├── articles.html           # Página de artículos
+│   ├── contact.html            # Página de contacto
+│   ├── styles.css              # Estilos CSS del sitio
+│   ├── BasicHTMLWebsite.html   # Archivo original (backup)
+│   └── README.md               # Documentación del proyecto
 └── README.md                   # Este archivo
 ```
 
-## 🚀 Proyectos
+### Organización
+
+- **Numeración secuencial** - Orden lógico de implementación
+- **Carpetas independientes** - Cada proyecto es autónomo
+- **CSS separado** - Mejores prácticas de desarrollo
+- **Documentación completa** - READMEs específicos por proyecto
+
+## Proyectos
 
 ### [01-single-page-cv](./01-single-page-cv/)
-- **Descripción:** CV de una página creado con HTML semántico
-- **Tecnologías:** HTML, SEO Meta Tags, Open Graph
-- **Referencia:** [roadmap.sh - Single-Page CV Project](https://roadmap.sh/projects/single-page-cv)
-- **Mi Implementación:** [GitHub - CV.html](https://github.com/CrNano/FrontendProjects/blob/main/01-single-page-cv/CV.html)
-- **Archivo:** `CV.html`
+
+**Descripción:** CV profesional implementado con HTML semántico y CSS moderno.
+
+**Tecnologías:**
+- HTML5 (estructura semántica)
+- CSS3 (estilos responsive)
+- SEO Meta Tags
+- Open Graph Tags
+
+**Archivos:**
+- `CV.html` - Página principal del CV
+- `styles.css` - Estilos CSS
+- `README.md` - Documentación
+
+**Referencias:**
+- [roadmap.sh - Single-Page CV Project](https://roadmap.sh/projects/single-page-cv)
+- [Implementación en GitHub](https://github.com/CrNano/FrontendProjects/blob/main/01-single-page-cv/CV.html)
 
 ### [02-basic-html-website](./02-basic-html-website/)
-- **Descripción:** Sitio web multi-página con estructura semántica HTML
-- **Tecnologías:** HTML, SEO Meta Tags, Open Graph, Formularios
-- **Referencia:** [roadmap.sh - Basic HTML Website Project](https://roadmap.sh/projects/basic-html-website)
-- **Mi Implementación:** [GitHub - Basic HTML Website](https://github.com/CrNano/FrontendProjects/tree/main/02-basic-html-website)
-- **Archivos:** `index.html`, `projects.html`, `articles.html`, `contact.html`
 
-## 📚 Recursos de Aprendizaje
+**Descripción:** Sitio web multi-página con navegación, formularios y diseño responsive.
 
-- [roadmap.sh](https://roadmap.sh/) - Roadmaps y proyectos para desarrolladores
-- [MDN Web Docs](https://developer.mozilla.org/) - Documentación web completa
-- [W3Schools](https://www.w3schools.com/) - Tutoriales de desarrollo web
+**Tecnologías:**
+- HTML5 (estructura semántica)
+- CSS3 (Grid, Flexbox, responsive)
+- Formularios HTML
+- SEO Meta Tags
 
-## 🎯 Objetivos de Aprendizaje
+**Archivos:**
+- `index.html` - Página de inicio
+- `projects.html` - Página de proyectos
+- `articles.html` - Página de artículos
+- `contact.html` - Página de contacto
+- `styles.css` - Estilos CSS del sitio
 
-- ✅ Estructura HTML semántica
-- ✅ SEO y meta tags
-- ✅ Formularios HTML
-- ✅ Navegación multi-página
-- ✅ Organización de proyectos
-- 🔄 CSS y estilos (próximos proyectos)
-- 🔄 JavaScript interactivo (próximos proyectos)
+**Referencias:**
+- [roadmap.sh - Basic HTML Website Project](https://roadmap.sh/projects/basic-html-website)
+- [Implementación en GitHub](https://github.com/CrNano/FrontendProjects/tree/main/02-basic-html-website)
+
+## Recursos
+
+### Documentación
+- [MDN Web Docs](https://developer.mozilla.org/) - Documentación oficial
+- [W3Schools](https://www.w3schools.com/) - Tutoriales interactivos
+- [roadmap.sh](https://roadmap.sh/) - Roadmaps y proyectos
+
+### Herramientas
+- [Visual Studio Code](https://code.visualstudio.com/) - Editor de código
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - Herramientas de depuración
+- [GitHub](https://github.com/) - Control de versiones
+
+## Conceptos Implementados
+
+### HTML Semántico
+- Estructura correcta con `<header>`, `<main>`, `<section>`, `<footer>`
+- Mejora la accesibilidad y SEO
+- Código más mantenible y legible
+
+### CSS Moderno
+- Selectores y especificidad
+- Flexbox y Grid para layouts
+- Media queries para responsive design
+- Variables CSS y mejores prácticas
+
+### SEO y Optimización
+- Meta tags para motores de búsqueda
+- Open Graph para redes sociales
+- Favicon y optimización de rendimiento
+
+### Formularios y Navegación
+- Formularios HTML5 con validación nativa
+- Navegación multi-página consistente
+- Enlaces internos y externos
 

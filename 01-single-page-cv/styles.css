@@ -1,0 +1,105 @@
+/* CV Styles - Johan Navarro */
+
+/* Reset básico - Elimina márgenes y padding por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+/* Estilos del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    color: #333; /* Color de texto principal */
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+/* Estilos del header - Encabezado principal del CV */
+header {
+    background: #2c3e50; /* Color de fondo azul oscuro */
+    color: white; /* Texto en blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Título principal del CV */
+header h1 {
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Información de contacto en el header */
+header p {
+    font-size: 1.1em; /* Tamaño de fuente ligeramente mayor */
+    opacity: 0.9; /* Transparencia sutil */
+}
+
+/* Estilos de las secciones del CV */
+section {
+    background: white; /* Fondo blanco */
+    margin: 20px 0; /* Espacio vertical entre secciones */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/* Títulos de sección (h2) */
+section h2 {
+    color: #2c3e50; /* Color azul oscuro */
+    border-bottom: 2px solid #3498db; /* Línea inferior azul */
+    padding-bottom: 10px; /* Espacio entre texto y línea */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+/* Subtítulos de sección (h3) */
+section h3 {
+    color: #34495e; /* Color gris azulado */
+    margin-top: 15px; /* Espacio superior */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Estilos de listas */
+ul {
+    margin-left: 20px; /* Indentación de la lista */
+}
+
+li {
+    margin-bottom: 5px; /* Espacio entre elementos de lista */
+}
+
+/* Estilos de enlaces */
+a {
+    color: #3498db; /* Color azul para enlaces */
+    text-decoration: none; /* Sin subrayado por defecto */
+}
+
+/* Efecto hover en enlaces */
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Texto en negrita */
+strong {
+    color: #2c3e50; /* Color azul oscuro para texto fuerte */
+}
+
+/* Media queries para diseño responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Menos padding en móviles */
+    }
+    
+    header h1 {
+        font-size: 2em; /* Título más pequeño en móviles */
+    }
+    
+    section {
+        padding: 15px; /* Menos padding en secciones para móviles */
+    }
+}
