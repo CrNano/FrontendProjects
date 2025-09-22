@@ -1,250 +1,280 @@
-/* Basic HTML Website Styles - Johan Navarro */
+/* Estilos del Sitio Web Básico - Johan Navarro */
 
-/* Reset básico */
+/* Reset básico - Elimina márgenes y padding por defecto del navegador */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
 }
 
+/* Estilos del cuerpo del documento */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+    font-family: Arial, sans-serif; /* Fuente principal del sitio */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    color: #333; /* Color de texto principal */
+    background-color: #f8f9fa; /* Color de fondo gris claro */
 }
 
-/* Header */
+/* Estilos del header - Encabezado del sitio */
 header {
-    background: #343a40;
-    color: white;
-    padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #343a40; /* Color de fondo gris oscuro */
+    color: white; /* Texto en blanco */
+    padding: 1rem 0; /* Espaciado vertical */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil */
 }
 
+/* Navegación principal */
 nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    display: flex; /* Usa flexbox para el layout */
+    justify-content: space-between; /* Espacio entre logo y menú */
+    align-items: center; /* Centra verticalmente */
+    padding: 0 20px; /* Espaciado horizontal */
 }
 
+/* Logo o nombre del sitio */
 nav span {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.5rem; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
 }
 
+/* Enlaces de navegación */
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
+    color: white; /* Color blanco para enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espacio entre enlaces */
+    transition: color 0.3s; /* Transición suave al cambiar color */
 }
 
+/* Efecto hover en enlaces de navegación */
 nav a:hover {
-    color: #007bff;
+    color: #007bff; /* Color azul al pasar el mouse */
 }
 
-/* Main Content */
+/* Contenido principal del sitio */
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 20px; /* Espaciado interno */
 }
 
-/* Hero Section */
+/* Sección hero - Título principal */
 section:first-of-type {
-    text-align: center;
-    padding: 40px 0;
-    background: white;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center; /* Centra el texto */
+    padding: 40px 0; /* Espaciado vertical */
+    background: white; /* Fondo blanco */
+    margin: 20px 0; /* Espacio vertical */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra sutil */
 }
 
+/* Título principal de la sección hero */
 section:first-of-type h1 {
-    font-size: 3rem;
-    color: #2c3e50;
-    margin-bottom: 10px;
+    font-size: 3rem; /* Tamaño de fuente muy grande */
+    color: #2c3e50; /* Color azul oscuro */
+    margin-bottom: 10px; /* Espacio inferior */
 }
 
+/* Párrafo de la sección hero */
 section:first-of-type p {
-    font-size: 1.2rem;
-    color: #6c757d;
+    font-size: 1.2rem; /* Tamaño de fuente grande */
+    color: #6c757d; /* Color gris */
 }
 
-/* Three Column Layout */
+/* Layout de tres columnas - Contenido principal */
 section:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin: 20px 0;
+    display: grid; /* Usa CSS Grid para el layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas que se adaptan automáticamente */
+    gap: 20px; /* Espacio entre columnas */
+    margin: 20px 0; /* Espacio vertical */
 }
 
+/* Contenedores de cada columna */
 section:nth-of-type(2) > div {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra sutil */
 }
 
+/* Títulos de sección en las columnas */
 section:nth-of-type(2) h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+    color: #2c3e50; /* Color azul oscuro */
+    border-bottom: 2px solid #007bff; /* Línea inferior azul */
+    padding-bottom: 10px; /* Espacio entre texto y línea */
+    margin-bottom: 15px; /* Espacio inferior */
 }
 
+/* Subtítulos en las columnas */
 section:nth-of-type(2) h3 {
-    color: #495057;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    color: #495057; /* Color gris oscuro */
+    margin-top: 15px; /* Espacio superior */
+    margin-bottom: 10px; /* Espacio inferior */
 }
 
-/* Lists */
+/* Estilos de listas */
 ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Sin padding por defecto */
 }
 
+/* Elementos de lista */
 li {
-    padding: 8px 0;
-    border-bottom: 1px solid #e9ecef;
+    padding: 8px 0; /* Espaciado vertical */
+    border-bottom: 1px solid #e9ecef; /* Línea separadora gris */
 }
 
+/* Último elemento de lista sin línea separadora */
 li:last-child {
-    border-bottom: none;
+    border-bottom: none; /* Sin borde inferior */
 }
 
+/* Enlaces dentro de elementos de lista */
 li a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s;
+    color: #007bff; /* Color azul para enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Transición suave al cambiar color */
 }
 
+/* Efecto hover en enlaces de lista */
 li a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+    color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
 }
 
-/* Reviews Section */
+/* Sección de reseñas - Testimonios */
 section:last-of-type {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin: 20px 0;
+    background: white; /* Fondo blanco */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra sutil */
+    margin: 20px 0; /* Espacio vertical */
 }
 
+/* Título de la sección de reseñas */
 section:last-of-type h2 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 30px;
+    text-align: center; /* Centra el título */
+    color: #2c3e50; /* Color azul oscuro */
+    margin-bottom: 30px; /* Espacio inferior */
 }
 
+/* Contenedor de las reseñas en grid */
 section:last-of-type > div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: grid; /* Usa CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas que se adaptan */
+    gap: 20px; /* Espacio entre reseñas */
 }
 
+/* Estilos de las citas/testimonios */
 blockquote {
-    background: #f8f9fa;
-    padding: 20px;
-    border-left: 4px solid #007bff;
-    margin: 0;
-    font-style: italic;
+    background: #f8f9fa; /* Fondo gris claro */
+    padding: 20px; /* Espaciado interno */
+    border-left: 4px solid #007bff; /* Borde izquierdo azul */
+    margin: 0; /* Sin margen */
+    font-style: italic; /* Texto en cursiva */
 }
 
+/* Información del autor de la cita */
 cite {
-    display: block;
-    margin-top: 10px;
-    text-align: right;
+    display: block; /* Elemento de bloque */
+    margin-top: 10px; /* Espacio superior */
+    text-align: right; /* Alineado a la derecha */
 }
 
+/* Nombre del autor en negrita */
 cite strong {
-    color: #2c3e50;
+    color: #2c3e50; /* Color azul oscuro */
 }
 
+/* Cargo del autor */
 cite small {
-    color: #6c757d;
+    color: #6c757d; /* Color gris */
 }
 
-/* Footer */
+/* Footer - Pie de página */
 footer {
-    background: #343a40;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    background: #343a40; /* Color de fondo gris oscuro */
+    color: white; /* Texto en blanco */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 40px; /* Espacio superior */
 }
 
-/* Forms */
+/* Estilos de formularios */
 form {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra sutil */
 }
 
+/* Contenedores de campos del formulario */
 form div {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Espacio entre campos */
 }
 
+/* Etiquetas de los campos */
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #495057;
+    display: block; /* Elemento de bloque */
+    margin-bottom: 5px; /* Espacio inferior */
+    font-weight: bold; /* Texto en negrita */
+    color: #495057; /* Color gris oscuro */
 }
 
+/* Campos de entrada (input, textarea, select) */
 input, textarea, select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    font-size: 1rem;
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ced4da; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente normal */
 }
 
+/* Efecto focus en campos de entrada */
 input:focus, textarea:focus, select:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+    outline: none; /* Sin contorno por defecto */
+    border-color: #007bff; /* Borde azul al enfocar */
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25); /* Sombra azul al enfocar */
 }
 
+/* Botones del formulario */
 button {
-    background: #007bff;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s;
+    background: #007bff; /* Fondo azul */
+    color: white; /* Texto blanco */
+    padding: 12px 24px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    font-size: 1rem; /* Tamaño de fuente normal */
+    transition: background 0.3s; /* Transición suave al cambiar color */
 }
 
+/* Efecto hover en botones */
 button:hover {
-    background: #0056b3;
+    background: #0056b3; /* Fondo azul más oscuro al pasar el mouse */
 }
 
-/* Responsive */
+/* Media queries para diseño responsive */
 @media (max-width: 768px) {
+    /* Navegación en móviles */
     nav {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column; /* Apila elementos verticalmente */
+        gap: 10px; /* Espacio entre elementos */
     }
     
+    /* Título principal más pequeño en móviles */
     section:first-of-type h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Tamaño de fuente reducido */
     }
     
+    /* Layout de columnas en una sola columna en móviles */
     section:nth-of-type(2) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Una sola columna */
     }
     
+    /* Contenido principal con menos padding en móviles */
     main {
-        padding: 10px;
+        padding: 10px; /* Menos espaciado interno */
     }
 }
